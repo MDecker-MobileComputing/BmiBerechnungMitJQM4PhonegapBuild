@@ -7,3 +7,6 @@ App-Dateien für die folgenden Betriebssysteme erstellen:
 * iOS (IPA-Datei)
 * Windows (APPX-Datei).
 
+<br>
+
+This Git-Repository contains source files for [jQuery](http://jquery.com/) and [jQuery Mobile](https://jquerymobile.com/), which are released under the terms of the [*MIT License*](https://jquery.org/license/).
