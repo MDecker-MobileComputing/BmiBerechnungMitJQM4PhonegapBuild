@@ -28,7 +28,6 @@ function onButtonBerechnen() { "use strict";
     } else {
         bewertung = "Massive Adipositas";
     }
-
     console.log("Bewertung: " + bewertung);
 
     // Ergebnis in Dialog darstellen
@@ -43,14 +42,14 @@ function onButtonBerechnen() { "use strict";
  *  Event-Handler für Button "Zurücksetzen".
  */
 function onButtonLoeschen() { "use strict";
-    
+
     $("#inputGewicht").val("");
     $("#inputGroesse").val("");
 }
 
 
 function onErgebnisSchliessen() {  "use strict";
-$("#ergebnisPopup").popup("close");
+    $("#ergebnisPopup").popup("close");
 }
 
 
@@ -62,7 +61,7 @@ function onSeiteGeladen() { "use strict";
     $("#buttonBerechnen").click( onButtonBerechnen );
     $("#buttonLoeschen" ).click( onButtonLoeschen  );
 
-    $("#buttonDialogSchliessen").click( onErgebnisSchliessen );
+    $("#buttonErgebnisPopupSchliessen").click( onErgebnisSchliessen );
 }
 
 
