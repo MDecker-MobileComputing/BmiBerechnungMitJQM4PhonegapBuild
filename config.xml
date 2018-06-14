@@ -2,18 +2,18 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "de.mide.phonegap.bmirechner"
-        versionCode = "1"
-        version     = "0.9" >
+        versionCode = "2"
+        version     = "1.0" >
 
   <name>BMI-Berechnung</name>
 
   <description>
-      BMI-Berechnung mit jQuery Mobile, ab Mai 2017.
+      BMI-Berechnung mit jQuery Mobile, ab Mai 2018.
       
   </description>
 
   <author href="https://build.phonegap.com" email="support@phonegap.com">
-      K. Einer
+      M.D.
   </author>
   
 </widget>
