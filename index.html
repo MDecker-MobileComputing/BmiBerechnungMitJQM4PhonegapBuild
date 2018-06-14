@@ -38,15 +38,16 @@
       <h4>2018 by M.D., powered by jQuery Mobile (jQM)</h4>
     </div>
     
-    <!-- Popup für Fehlermeldungen; muss "in" der Page definiert sein, von der aus es evtl. aufgerufen wird. -->
+    <!-- Popup für Anzeige Ergebnis oder Fehlermeldung; muss "in" der Page definiert sein, 
+         von der aus es evtl. aufgerufen wird. -->
     <div data-role="popup" id="ergebnisPopup">
       <div data-role="header">
-        <h1>Ergebnis</h1>
+        <h1 id="popup_titel">&nbsp;</h1>
       </div>
       <div class="ui-content" data-role="main">
-        <p id="ergebnis_1"></p>
+        <p id="popup_zeile_1"></p>
         <br/>
-        <p id="ergebnis_2"></p>
+        <p id="popup_zeile_2"></p>
         <br/>
         <button id="buttonErgebnisPopupSchliessen" class="ui-btn ui-corner-all ui-btn-inline">Schließen</button>
       </div>

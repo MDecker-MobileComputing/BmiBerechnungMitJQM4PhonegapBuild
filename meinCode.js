@@ -9,6 +9,16 @@ function onButtonBerechnen() { "use strict";
     let kg = parseFloat( $("#inputGewicht").val() );
     let cm = parseFloat( $("#inputGroesse").val() );
 
+    if (!kg) {
+        popupAnzeigen("Fehler", "Kein gültiger Wert für Gewicht eingegeben.", "" );
+        return;
+    }
+    if (!cm) {
+        popupAnzeigen("Fehler", "Kein gültiger Wert für Größe eingegeben.", "" );
+        return;
+    }
+
+
     let meter = cm / 100.0;
 
     // Eigentliche BMI-Berechnung
@@ -30,9 +40,20 @@ function onButtonBerechnen() { "use strict";
     }
     console.log("Bewertung: " + bewertung);
 
-    // Ergebnis in Dialog darstellen
-    $("#ergebnis_1").text( "BMI-Wert: " + bmiWert );
-    $("#ergebnis_2").text( "(" + bewertung  + ")" );
+
+    const bmiWertString   = "BMI-Wert: " + bmiWert;
+    const bewertungString = "(" + bewertung  + ")";
+    popupAnzeigen("Ergebnis", bmiWertString, bewertungString );
+}
+
+
+/**
+ * Aufruf Popup zur Anzeige Ergebnis oder Fehlermeldung.
+ */
+function popupAnzeigen(titel, zeile1, zeile2) { "use strict";
+    $("#popup_titel"  ).text( titel  );
+    $("#popup_zeile_1").text( zeile1 );
+    $("#popup_zeile_2").text( zeile2 );
 
     $("#ergebnisPopup").popup("open");
 }
