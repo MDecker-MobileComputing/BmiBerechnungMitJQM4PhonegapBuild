@@ -14,3 +14,10 @@ App-Dateien für die folgenden Betriebssysteme erstellen:
 This Git repository contains source files for [*jQuery*](http://jquery.com/) and [*jQuery Mobile*](https://jquerymobile.com/) 
 (see subfolder *jQM*), which are released under the terms of the [*MIT License*](https://jquery.org/license/).
 The source code of the BMI calculator itself is also released under the *MIT License*.
+
+<br>
+
+----
+# License
+
+See the [LICENSE file](LICENSE.txt) for license rights and limitations (MIT).
